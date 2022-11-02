@@ -36,7 +36,7 @@ int main(){
 	
 	node* curNode = head->next;
 	cout << "链表内存储的数据如下：" << endl;
-	while(curNode != NULL){
+	while(curNode){
 		cout << curNode->data << " ";
 		curNode = curNode->next;
 	}

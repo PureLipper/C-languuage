@@ -2,15 +2,13 @@
 #include<string>
 using namespace std;
 
-int main(){
-	double sum = 0.0;
-	int k;
-	int p = 0;
+int main() {
+	int k,i = 1;
+	double sum = 0;
 	cin >> k;
-	do{
-		p++;
-		sum = sum + 1.0 / p;
-		//cout << sum << endl;
-	}while(sum <= k*1.0);
-	cout << p + 1;
+	do {
+		sum = sum + 1.0 / i;
+		i++;
+	} while (sum <= k);
+	cout << i - 1;
 }
